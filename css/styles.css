@@ -296,6 +296,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 95px;
 }
 .item-portfolio1 {
   margin-right: 30px;
