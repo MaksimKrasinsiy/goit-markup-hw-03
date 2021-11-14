@@ -46,14 +46,16 @@ body {
 
 /*----------------------header-------------------------*/
 .container {
-  width: 1200px;
+  width: 1210px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 .header-container {
   display: flex;
   align-items: center;
   height: 80px;
+  border-bottom: 1px solid #cecece;
 }
 .nav {
   display: flex;
@@ -85,7 +87,10 @@ body {
   color: var(--second-logo-title-color);
 }
 
-.header-link:not(:last-child) {
+.header-link:last-child {
+  margin-right: 0;
+}
+.header-link {
   margin-right: 50px;
 }
 .link-navigation {
@@ -109,8 +114,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-}
-.header-tel {
   margin-left: 50px;
 }
 /*------------------------------------main-----------------------*/
@@ -118,6 +121,7 @@ body {
   background-color: #2f303a;
   display: flex;
   flex-direction: column;
+  padding: 200px 252px;
 }
 .title-text {
   font-weight: 900;
@@ -127,8 +131,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  margin: 200px 250px 30px 250px;
+  margin-bottom: 30px;
 }
+
 .title-button {
   font-weight: bold;
   font-size: 16px;
@@ -139,16 +144,17 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--logo-title-color);
   color: var(--main-title-color);
-  margin-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 32px;
   padding-right: 32px;
 }
+.first-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list-function {
   display: flex;
-  padding-top: 95px;
-  padding-bottom: 95px;
 }
 .title-list {
   font-weight: bold;
@@ -166,6 +172,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.item-function {
+  width: 270px;
+}
+.second-section {
+  padding-bottom: 94px;
+}
 .item-function:not(:last-child) {
   margin-right: 30px;
 }
@@ -180,7 +192,14 @@ body {
 }
 .item-picturs {
   display: flex;
-  padding-bottom: 95px;
+}
+.item-img {
+  margin-right: 30px;
+}
+.third-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .heading-section-teem {
   font-weight: bold;
@@ -189,7 +208,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  padding-top: 95px;
   margin-bottom: 50px;
 }
 .list-teem-name {
@@ -199,8 +217,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .list-teem-position {
   font-weight: normal;
@@ -209,10 +225,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 .list-teem {
   display: flex;
-  padding-bottom: 50px;
+}
+.name-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*------------------------------------footer--------------------------------*/
 .footer {
@@ -237,6 +257,8 @@ body {
   color: #ffffff;
 }
 .footer-mail {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -244,13 +266,20 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  lor: rgba(255, 255, 255, 0.6);
 }
 /*---------------------------------------------------------portfolio-------------------------------------------------*/
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-list-btn {
   font-weight: 500;
   font-size: 16px;
@@ -258,11 +287,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
 }
 .portfolio-btn {
-  margin-top: 95px;
 }
 .item-button:not(:last-child) {
   margin-right: 8px;
@@ -296,26 +323,15 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 95px;
-}
-.item-portfolio1 {
-  margin-right: 30px;
-}
-.item-portfolio2 {
-  margin-right: 30px;
-}
-.item-portfolio4 {
-  margin-right: 30px;
-}
-.item-portfolio5 {
-  margin-right: 30px;
-}
-.item-portfolio7 {
-  margin-right: 30px;
-}
-.item-portfolio8 {
-  margin-right: 30px;
 }
 .item-portfolio {
   margin-bottom: 30px;
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+}
+.item-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-name-product {
+  padding: 20px 24px;
 }
