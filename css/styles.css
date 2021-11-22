@@ -46,7 +46,7 @@ body {
 }
 /*----------------------header-------------------------*/
 .header {
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #ececec;
 }
 .header-conteiner {
   display: flex;
@@ -183,7 +183,7 @@ body {
   color: var(--text-color);
 }
 /*------whot-we-doing-section-----*/
-.whot-we-doing-conteiner {
+.whot-we-doing-section {
   padding-bottom: 94px;
 }
 .heading-section-doit {
@@ -306,7 +306,7 @@ body {
 }
 .portfolio-button-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .portfolio-button-list .portfolio-btn-item:not(:last-child) {
